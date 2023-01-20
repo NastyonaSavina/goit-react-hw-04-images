@@ -70,7 +70,6 @@ export const App = () => {
           setQuery(value);
           setPage(1);
           setImages([]);
-          setIsLoading(true);
           setShowLoadMoreBtn(false);
         }
     }
@@ -78,7 +77,6 @@ export const App = () => {
     
     const handleLoadMore = () => {
         setPage(page + 1);
-        setIsLoading(true);
       }
   
     const openModal = index => {
